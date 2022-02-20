@@ -1,0 +1,38 @@
+<traceback object at 0x7f2385eacf00>
+Traceback (most recent call last):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/views.py", line 65, in post
+    if serializer.is_valid(raise_exception=True):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'latitude': [ErrorDetail(string='Ensure that there are no more than 3 digits before the decimal point.', code='max_whole_digits')]}
+<traceback object at 0x7f2385eaca40>
+Traceback (most recent call last):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/views.py", line 65, in post
+    if serializer.is_valid(raise_exception=True):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'latitude': [ErrorDetail(string='Ensure that there are no more than 3 digits before the decimal point.', code='max_whole_digits')], 'state': [ErrorDetail(string='This field is required.', code='required')]}
+<traceback object at 0x7f2385f01d00>
+Traceback (most recent call last):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/views.py", line 63, in post
+    request = RequestUpdater.get_lat_long(request)
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/utility.py", line 28, in get_lat_long
+    raise exp
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/utility.py", line 20, in get_lat_long
+    raise ValueError("use comma to separate lat and long in geolocation field")
+ValueError: use comma to separate lat and long in geolocation field
+<traceback object at 0x7f2385dd3740>
+Traceback (most recent call last):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/views.py", line 39, in get
+    raise ObjectDoesNotExist("entered name not found")
+django.core.exceptions.ObjectDoesNotExist: entered name not found
+<traceback object at 0x7f2385d77b40>
+Traceback (most recent call last):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/views.py", line 36, in get
+    raise ValueError("enter name to get the details for")
+ValueError: enter name to get the details for
+<traceback object at 0x7f2385d8e6c0>
+Traceback (most recent call last):
+  File "/home/admin1/PycharmProjects/LocationDetailsMap/MapLocationDetails/location_details/views.py", line 99, in get
+    raise ValueError("enter initial to get the suggestions")
+ValueError: enter initial to get the suggestions
